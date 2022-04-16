@@ -1,0 +1,40 @@
+{
+  "name": "mailjet-deployment-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "send.ts",
+  "scripts": {
+    "send": "npm run build && node -r dotenv/config --es-module-specifier-resolution=node ./dist/send.js",
+    "sendall": "npm run build && node -r dotenv/config --es-module-specifier-resolution=node ./dist/send-all.js",
+    "deploy": "npm run build && node -r dotenv/config --es-module-specifier-resolution=node ./dist/deploy.js",
+    "build": "tsc"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mjml": "^4.7.0",
+    "@types/node": "^17.0.23",
+    "@types/node-mailjet": "^3.3.8",
+    "@typescript-eslint/eslint-plugin": "^5.16.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "prettier": "^2.6.1",
+    "typescript": "^4.6.3"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.181",
+    "chalk": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "lodash": "^4.17.21",
+    "mjml": "^4.12.0",
+    "node-mailjet": "^3.3.7",
+    "ts-node": "^10.7.0"
+  }
+}

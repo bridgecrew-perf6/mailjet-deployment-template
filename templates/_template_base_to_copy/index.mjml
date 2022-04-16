@@ -1,0 +1,13 @@
+<mjml>
+  <mj-include path="../_composables/head.mjml" />
+  <mj-body>
+    <mj-include path="../_composables/header.mjml" />
+    <mj-wrapper>
+      <mj-section>
+        <mj-column>
+          <mj-text> Replace me </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-wrapper>
+  </mj-body>
+</mjml>
